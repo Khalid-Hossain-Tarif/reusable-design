@@ -1,0 +1,46 @@
+.c-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.c-checkbox-item-input {
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #222836;
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  opacity: .5;
+  transition: border, background-color .3s;
+}
+
+.c-checkbox-item-input:hover {
+  opacity: 1;
+}
+
+.c-checkbox-item-input:checked {
+  background-color: #222836;
+  border-color: #222836;
+  opacity: 1;
+}
+
+.c-checkbox-item-input:before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+  top: 50%;
+  right: 50%;
+}
+
+.c-checkbox-item-input-label {
+  cursor: pointer;
+}
